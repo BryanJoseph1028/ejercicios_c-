@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<conio.h>
+#include<iostream.h>
+#include<stdlib.h>
+
+main()
+{//inicio
+int trabajos, costo;
+cout<<"Ingrese cuantos trabajos necesita"<<endl;
+cin>>trabajos;
+costo=trabajo*trabajo;
+cout<<"su costo total es"<<costo<<endl;
+system("pause");
+//return 0;
+//getch();
+]//fin

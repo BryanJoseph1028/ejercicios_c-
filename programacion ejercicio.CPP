@@ -1,0 +1,1013 @@
+#include <conio.h>
+#include <stdio.h>
+#include <iostream.h>
+#include <windows.h>
+#include <string.h>
+#include <stdlib.h>
+#include <math.h>
+#include <time.h>
+#define NUMERO_ANIMALES 30
+main()
+{//inicio
+int op, num1, num2, suma, resta, multi, ver, quit;
+float div;
+float kilom, metros, calmill, mill, mill2;
+int I, J, mitad;
+int palabra, palabra2;
+int edad, falta, anacimiento, ano;
+int nu1;
+int num, a;
+int number;
+int b,c;
+int op3, ret, dep, sal, din, quitb;
+char op1;
+char *animales[NUMERO_ANIMALES] =
+	{"perro","gato","raton","tortuga","lechuza","mono","leon","tigre","loro","murcielago",
+	"mariquita","halcon","rata","rana","jirafa","delfin","ballena","foca","serpiente","ciervo",
+	"escarabajo","mariposa","gusano","toro","cebra","aguila","avestruz","vaca","oveja","cabra",};
+
+quit=21;
+while(quit<=21){
+	cout<<"Ingrese la opcion que desea:"<<endl;
+   cout<<"opciones:"<<endl;
+   cout<<"1.Suma resta multiplicacion y division de 2 numeros"<<op1<<endl;
+   cout<<"2.Determinacion de un numero si es par o impar"<<op1<<endl;
+   cout<<"3.Conversion de kilometros a millas metros y pulgadas de libras a kilos"<<op1<<endl;
+   cout<<"4.Detrminacion una palabra si es un palindromo"<<op1<<endl;
+   cout<<"5.Conversion de numero analogos a romanos"<<op1<<endl;
+   cout<<"6.Conversion de numeros a letras"<<op1<<endl;
+   cout<<"7.Conversion de numeros con decimal a letras"<<op1<<endl;
+   cout<<"8.Tabla de multiplicar"<<op1<<endl;
+   cout<<"9.Tabla de multiplicar de 10"<<op1<<endl;
+   cout<<"10.Forma grafica de una multiplicacion"<<op1<<endl;
+   cout<<"11.Conversion de numeros decimales a binario"<<op1<<endl;
+   cout<<"12.Conversion de numeros decimales a hexadecimal"<<op1<<endl;
+   cout<<"13.Creacion de figura"<<op1<<endl;
+   cout<<"14.Movimiento de un punto"<<op1<<endl;
+   cout<<"15.Cajero automatico"<<op1<<endl;
+   cout<<"16.Calculo de una hipotenusa"<<op1<<endl;
+   cout<<"17.Cuantos dias le hace falta"<<op1<<endl;
+   cout<<"18.Nacimiento"<<op1<<endl;
+   cout<<"19.Darle trabajo a una persona segun sus años"<<op1<<endl;
+   cout<<"20.Ahorcado"<<op1<<endl;
+   cout<<"21.salir"<<op1<<endl;
+   cin>>op;
+   switch(op)
+   {//inicio
+   case 1:
+   {
+   system("cls");
+   cout<<"usted eligio la opcion 1"<<endl;
+   cout<<"ingrse el primer numero"<<endl;
+   cin>>num1;
+   cout<<"ingrse el segundo numero"<<endl;
+   cin>>num2;
+   suma=num1+num2;
+   resta=num1-num2;
+   multi=num1*num2;
+   div=num1/num2;
+   cout<<"el resultado de la suma es "<<suma<<endl;
+   cout<<"el resultado de la resta es " <<resta<<endl;
+   cout<<"el resultado de la multiplicacion es " <<multi<<endl;
+   cout<<"el resultado de la division es "<<div<<endl;
+   system("pause");
+   getch();
+   }
+   break;
+
+   case 2:
+   {
+   system("cls");
+   cout<<"usted eligio la opcion 2"<<op1<<endl;
+   cout<<"ingrese el numero"<<endl;
+   cin>>nu1;
+    if(nu1/2)
+    {
+    cout<<"el numero es par"<<endl;
+    }
+    else
+     {
+     cout<<"el numero es impar"<<endl;
+     }
+     system("pause");
+    }
+   break;
+
+   case 3:
+   {
+   system("cls");
+   cout<<"usted eligio la opcion 3"<<op1<<endl;
+   mill=0.6214;
+   mill2=0.000621371;
+   cout<<"ingrese el numeros de kilometros a convertir"<<endl;
+   cin>>kilom;
+   metros=(kilom*1)/1000;
+   calmill=(kilom*mill)/1000;
+   cout<<"kilometros a millas son "<<calmill<<endl;
+   cout<<"kilometros a metros son "<<metros<<endl;
+   cout<<"ingrese el numeros de metros a  convertir"<<endl;
+   cin>>metros;
+   kilom=(metros*1000)/1;
+   calmill=(metros*mill)/(1);
+   cout<<"metros a kilometros son "<<kilom<<endl;
+   cout<<"metros a millas son "<<calmill<<endl;
+   cout<<"ingrese el numeros de millas a  convertir"<<endl;
+   cin>>calmill;
+   kilom=(calmill*1)/(mill2);
+   metros=(calmill*1)/(mill2);
+   cout<<"metros a kilometros son "<<kilom<<endl;
+   cout<<"metros a millas son "<<calmill<<endl;
+   system("pause");
+   }
+   break;
+
+   case 4:
+   {
+   system("cls");
+   cout<<"usted eligio la opcion 4"<<op1<<endl;
+
+  I = 0;
+  cout<<"ingrese una palabra"<<endl;
+ cin>>palabra;
+ palabra = I;
+ palabra2 = J;
+
+ mitad = palabra/2;
+ while(palabra==palabra2)
+ {
+  if(mitad == palabra){
+   cout << "Es palindromo"<<endl;
+ palabra2--;
+ palabra++;
+ }
+ }
+ if(mitad != palabra){
+ cout << "No es palindromo"<<endl;
+ }
+ system("pause");
+ return 0;
+   }
+   break;
+
+   case 5:
+   {
+   system("cls");
+   cout<<"usted eligio la opcion 5"<<endl;
+cout << "Escribe el numero a convertir, que sea mayor o igual a 1 y menor o igual a 3999" << endl;
+cin >> a;
+num=a;
+while(num!=0)
+{
+
+if (num<= 3999 && num>= 1000)
+{
+cout << "M";
+num = num -1000;
+}
+else if(num <1000 && num>=900)
+{
+cout << "CM";
+num = num - 900;
+}
+else if(num < 900 && num>500)
+{
+cout << "D";
+num = num - 500;
+}
+else if (num == 500)
+{
+cout << "D";
+num = num -500;
+}
+else if (num<500 && num>= 400)
+{
+cout << "CD";
+num = num - 400;
+}
+else if (num<400 && num >99)
+{
+cout << "C";
+num = num -100;
+}
+else if (num< 100 && num>89)
+{
+cout << "XC";
+num = num - 90;
+}
+else if (num< 90 && num>59)
+{
+cout << "L";
+num = num - 50;
+}
+else if(num<60 && num >50)
+{
+cout << "L";
+num = num - 50;
+}
+else if (num ==50)
+{
+cout << "L";
+num = num -50;
+}
+else if(num<50 && num>39)
+{
+cout << "XL";
+num = num - 40;
+}
+else if(num< 40 && num> 10)
+{
+cout << "X";
+num = num - 10;
+}
+else if(num == 10)
+{
+cout << "X";
+num = num -10;
+}
+else if(num==9)
+{
+cout << "IX";
+num = num - 9;
+}
+else if(num<=8 && num>=6)
+{
+cout << "V";
+num = num - 5;
+}
+else if (num == 5)
+{
+cout << "V";
+num = num - 5;
+}
+else if (num == 4)
+{
+cout << "IV"<<endl;
+num = num - 4;
+}
+else if (num<= 3 && num>=1)
+{
+cout << "I"<<endl;
+num = num - 1;
+}
+system("pause");
+   }
+   break;
+
+   case 6:
+   {
+   system("cls");
+   cout<<"usted eligio la opcion 6"<<endl;
+
+   }
+   break;
+
+   case 7:
+   {
+    system("cls");
+   cout<<"usted eligio la opcion 7"<<endl;
+     float x;
+    cout<<"ingrese un numero"<<endl;
+    cin>>x;
+     if((x<1)||(x>999)){
+cout<<"INGRESA UN NUMERO DEL 1 AL 999\n";
+}
+else
+
+        if(x>=900)
+           {
+           cout<<"NOVECIENTOS "<<endl;
+            x=x-900;
+            }
+       else if
+       (x>=800)   {
+       cout<<"OCHOCIENTOS "<<endl ;
+       x=x-800;
+       }
+       else if(x>=700)
+        {
+        cout<<"SETECIENTOS "<<endl ;
+        x=x-700;
+        }
+         else if(x>=600)
+            {
+            cout<<"SEISCIENTOS "<<endl ;
+            x=x-600;
+            }
+       else if(x>=500)
+        {
+        cout<<"QUINIENTOS "<<endl  ;
+        x=x-500;
+        }
+       else if(x>=400)
+         {
+         cout<<"CUATROCIENTOS "<<endl   ;
+         x=x-400;
+         }
+       else if(x>=300)   {
+       cout<<"TRESCIENTOS "<<endl ;
+       x=x-300;
+       }
+       else if(x>=200)   {
+       cout<<"DOSCIENTOS "<<endl  ;
+       x=x-200;
+       }
+       else if(x>100)
+       {
+       cout<<"CIENTO "<<endl;
+       }
+       else if(x==100)  {
+       cout<<"CIEN" <<endl;
+       x=x-100;
+       }
+        if(x>90) {
+        cout<<"NOVENTA Y "<<endl   ;
+        x=x-90;
+         }
+            if(x==90)   {
+            cout<<"NOVENTA"<<endl  ;
+            x=x-90;
+            if(x>80) {
+            cout<<"OCHENTA Y "<<endl   ;
+            x=x-80;
+            }
+            if(x==80)
+            {
+            cout<<"OCHENTA" <<endl ;
+            x=x-80;
+            }
+            if(x>70)
+             {
+             cout<<"SETENTA Y "<<endl;
+             x=x-70;
+              }
+            if(x==70)
+              {
+              cout<<"SETENTA"<<endl  ;
+              x=x-70;
+               }
+            if(x>60)
+            {cout<<"SESENTA Y "<<endl   ;
+            x=x-60;
+             }
+            if(x==60)
+             {
+             cout<<"SESENTA"<<endl  ;
+             x=x-60;
+              }
+            if(x>50)
+            {cout<<"CINCUENTA "<<endl ;
+            x=x-50;
+             }
+            if(x==50)
+             {
+             cout<<"CINCUENTA"<<endl    ;
+             x=x-50;
+             }
+            if(x>40)
+            {
+            cout<<"CUARENTA  " <<endl ;
+            x=x-40;
+             }
+            if(x==40)
+               {
+               cout<<"CUARENTA"<<endl ;
+               x=x-40;
+               }
+            if(x>30)
+             {cout<<"TREINTA Y "<<endl   ;
+             x=x-30;
+              }
+            if(x==30)
+             {
+             cout<<"TREINTA"<<endl  ;
+             x=x-30;
+             }
+            if(x>20)
+             {
+             cout<<"VEINTI" <<endl      ;
+             x=x-20;
+              }
+            if(x==20)   {
+            cout<<"VEINTE" <<endl      ;
+            x=x-20;
+            }
+
+        if(x>=16)
+         {
+         cout<<"DIECI"   <<endl     ;
+         x=x-10;
+          }
+       else if(x==15)
+        {
+        cout<<"QUINCE" <<endl      ;
+        x=x-15;
+         }
+       else if(x==14)
+         {
+         cout<<"CATORCE"<<endl  ;
+         x=x-14;
+          }
+       else if(x==13)
+       {
+       cout<<"TRECE"  <<endl      ;
+       x=x-13;
+        }
+       else if(x==12)
+        {
+        cout<<"DOCE" <<endl    ;
+        x=x-12;
+        }
+       else if(x==11)
+        {
+        cout<<"ONCE" <<endl    ;
+        x=x-11;
+        }
+       else if(x==10)   {
+       cout<<"DIEZ"<<endl     ;
+       x=x-10;
+        }
+        if(x==9)
+        {
+        cout<<"NUEVE"    <<endl    ;
+        x=x-9;
+        }
+        if(x==8)    {
+        cout<<"OCHO" <<endl    ;
+        x=x-8;
+          }
+        if(x==7)
+         {
+         cout<<"SIETE"  <<endl      ;
+         x=x-7;
+          }
+            if(x==6)
+            {
+            cout<<"SEIS" <<endl    ;
+            x=x-6;
+             }
+       else if(x==5)    {
+       cout<<"CINCO"        ;
+       x=x-5;
+        }
+       else if(x==4)    {
+       cout<<"CUATRO"<<endl ;
+       x=x-4;
+        }
+       else if(x==3)
+        {cout<<"TRES"<<endl     ;
+        x=x-3;
+         }
+       else if(x==2)
+         {
+         cout<<"DOS"   <<endl   ;
+         x=x-2;
+          }
+       else if(x==1)
+         {
+         cout<<"UNO" <<endl     ;
+         x=x-1;
+           }
+       }
+    cout<<endl;
+
+   }
+   break;
+
+   case 8:
+   {
+   system("cls");
+   cout<<"usted eligio la opcion 8"<<endl;
+    cout<<"Ingrese un numero:"<<endl;
+    cin>>number;
+
+    for(int i=1;i<=10;i++)
+    {
+        int multiplicacion = i * number;
+        cout<<number <<" x "<< i <<"="<< multiplicacion <<endl;
+    }
+   }
+   break;
+
+   case 9:
+   {
+   system("cls");
+   cout<<"usted eligio la opcion 9"<<endl;
+   cout<<"Ingrese un numero:"<<endl;
+    cin>>number;
+
+    for(int i=1;i<=10;i++)
+    {
+        int multiplicacion = i * number;
+        cout<<number <<" x "<< i <<"="<< multiplicacion <<endl;
+    }
+   }
+   break;
+
+   case 10:
+   {
+   system("cls");
+   cout<<"usted eligio la opcion 10"<<endl;
+
+   }
+   break;
+
+   case 11:
+   {
+    system("cls");
+   cout<<"usted eligio la opcion 11"<<endl;
+   int binario[100], i=0, j=0, x;
+      printf("dame un numero: \n");
+      fflush(stdin);
+      scanf("%d",&x);
+      for(i=100;i>0;i--)
+      {
+           binario[i]=x%2;
+           x=x/2;
+      }
+      for(i=1;i<=100;i++)
+      {
+           if(binario[i]==1)
+           {
+                for(j=i;j<=100;j++)
+                {
+                     printf("%d",binario[j]);
+                }
+                break;
+           }
+      }
+      system("pause");
+
+   }
+   break;
+
+   case 12:
+   {
+   system("cls");
+   cout<<"usted eligio la opcion 12"<<endl;
+       long dec;
+    int rem;
+
+    cout << "ingrese el numero decimal: "<<endl;
+    cin >> dec;
+
+    while (dec > 0) {
+        rem = dec % 16;
+        if (rem > 9) {
+            switch (rem) {
+               case 10:
+               {
+                cout << "A";
+                }
+                break;
+               case 11:
+                cout << "B";
+                 break;
+               case 12:
+               {
+                cout << "C";
+                }
+                 break;
+               case 13:
+               {
+                cout << "D"<<endl;
+                }
+                 break;
+               case 14:
+               {
+                cout << "E"<<endl;
+                }
+                 break;
+               case 15:
+               {
+                cout << "F"<<endl;
+                }
+                 break;
+            }
+        }
+        else {
+            cout << rem;
+        }
+        dec = dec / 16;
+    }
+   system("pause");
+   }
+   break;
+
+   case 13:
+   {
+    system("cls");
+   cout<<"usted eligio la opcion 13"<<endl;
+   int numero,i,u,k;
+    int fila,columna,espacio,blanco;
+    char caracter;
+    char sino;
+
+   /*entorno*/
+    printf("Introduce numero de filas (1-15):");
+    scanf("%d",&numero);
+    printf("numero de espacios:");
+    scanf("%d",&espacio);
+    printf("caracter de relleno:");
+    fflush (stdin);
+    scanf("%c",&caracter);
+    if(caracter>='0' && caracter<='9'){
+
+      for (fila=1; fila<=numero; fila++)
+            {
+                for (blanco=1; blanco<=numero-fila+espacio; blanco++)
+                    printf(" ");
+                for (columna=1; columna<=2*fila-1; columna++)
+                    printf("%c",caracter);
+                printf("\n");
+            }
+   }
+      else
+
+        for (i=1;i<=numero;i++)
+
+            {
+                for (k=1; k<=espacio; k++)
+                    printf(" ");
+                    {
+                        for (u=1;u<=numero;u++)
+                            printf("%c",caracter);
+                        printf("\n");
+                    }
+            }
+   }
+   break;
+
+   case 14:
+   { //inicio dek case
+   system("cls");
+   cout<<"usted eligio la opcion 14"<<endl;
+   } //fin del case
+   break;
+
+   case 15:
+   {//inicio del case 15
+   system("cls");
+   cout<<"usted eligio la opcion 15"<<endl;
+   system("cls");
+   cout<<"-----------BIENVENIDO AL CAJERO--------------"<<endl;
+   cout<<"DEPOSITO---------1"<<endl;
+   cout<<"RETIRO-----------2"<<endl;
+   cout<<"SALDO------------3"<<endl;
+   cout<<"SALIR------------4"<<endl;
+   cin>>op3;
+   switch(op3)
+   {//is
+   case 1:
+   {
+   cout<<"Usted eligio Deposito"<<endl;
+    cout<<"Ingrese la cantidad a depositar"<<endl;
+    cin>>dep;
+     sal=din+dep;
+    if(dep<=0)
+    {
+     cout<<"No tiene suficiente dinero"<<endl;
+    }
+    else{
+        cout<<"Deposito aceptado"<<endl;
+        cout<<"deposito "<<dep<<endl;
+    }
+   }
+   break;
+   case 2:
+   {
+    cout<<"Usted eligio retiro"<<endl;
+    cout<<"Ingrese la cantidad a retirar"<<endl;
+    cin>>dep;
+    if(ret<=0)
+    {
+     cout<<"No tiene suficiente dinero para retirar"<<endl;
+    }
+    else{
+        cout<<"Retiro aceptado"<<endl;
+        (sal=din-ret);
+    }
+   }
+   break;
+   case 3:
+   {
+   cout<<"su saldo es"<<sal<<endl;
+   }
+   break;
+   }//fs
+       } //fin del case 15
+   break;
+
+   case 16:
+   {
+    system("cls");
+    cout<<"usted eligio la opcion 16"<<endl;
+    cout<<"ingrese un cateto"<<endl;
+    cin>>a;
+    cout<<"ingrese el otro cateto"<<endl;
+    cin>>b;
+    c=sqrt((a*a+b*b));
+    cout<<"el cateto es: "<<c<<endl;
+   }
+   break;
+
+   case 17:
+   {
+     system("cls");
+   cout<<"usted eligio la opcion 17"<<endl;
+   cout<<"ingrese su edad"<<endl;
+   cin>>edad;
+   falta=edad*365;
+   cout<<"vivira "<<falta<<endl;
+   system("pause");
+   }
+   break;
+
+   case 18:
+   {
+    system("cls");
+   cout<<"usted eligio la opcion 18"<<endl;
+   cout<<"ingrese su edad"<<endl;
+   cin>>edad;
+   anacimiento=2020-edad;
+   cout<<"usted nacio en el año "<<anacimiento<<endl;
+   system("pause");
+   }
+   break;
+
+   case 19:
+   {
+    system("cls");
+   cout<<"usted eligio la opcion 19"<<endl;
+   cout<<"ingrese el año de nacimiento"<<endl;
+   cin>>ano;
+   if(ano<=2002)
+   {
+   cout<<"tiene trabajo"<<ano<<endl;
+   }
+	else
+	{
+	cout<<"no tiene trabajo"<<ano<<endl;
+   system("pause");
+   }
+   break;
+
+   case 20:
+   {
+   system("cls");
+   cout<<"usted eligio la opcion 20"<<endl;
+
+
+	char *ahorcado0[7]={
+"    +----+    ",
+"    |    |    ",
+"    *    |    ",
+"   /|/   |    ",
+"   / /   |    ",
+"         |    ",
+"  ============",};
+
+char *ahorcado1[7]={
+"    +----+    ",
+"    |    |    ",
+"    *    |    ",
+"   /|/   |    ",
+"   /     |    ",
+"         |    ",
+"  ============",};
+
+char *ahorcado2[7]={
+"    +----+    ",
+"    |    |    ",
+"    *    |    ",
+"   /|/   |    ",
+"         |    ",
+"         |    ",
+"  ============",};
+
+char *ahorcado3[7]={
+"    +----+    ",
+"    |    |    ",
+"    *    |    ",
+"   /|    |    ",
+"         |    ",
+"         |    ",
+"  ============",};
+
+char *ahorcado4[7]={
+"    +----+    ",
+"    |    |    ",
+"    *    |    ",
+"    |    |    ",
+"         |    ",
+"         |    ",
+"  ============",};
+
+char *ahorcado5[7]={
+"    +----+    ",
+"    |    |    ",
+"    *    |    ",
+"         |    ",
+"         |    ",
+"         |    ",
+"  ============",};
+
+char *ahorcado6[7]={
+"    +----+    ",
+"    |    |    ",
+"         |    ",
+"         |    ",
+"         |    ",
+"         |    ",
+"  ============",};
+
+
+
+	char caracter_adecuado[50]="abcdefghijklmnopqrstuvwxyz";
+	char palabra_dinamica[50];
+	char palabra_oculta[50];
+	char caracter_introducido[50];
+	char respuesta[3];
+
+	bool continuar=true;
+	bool primera_partida=true;
+	bool caracter_correcto=false;
+	bool size_adecuado=false;
+	bool fin_for_comprobar_caracteres=false;
+	bool acierto=false;
+	bool respuesta_juego=false;
+	bool fin=true;
+
+	int numero;
+	int numero_caracteres;
+	int i;
+	int fallos;
+
+	printf("Vamos a jugar al ahorcado con animales y siempre introduciendo letras en minusculas!\n");
+	printf("La palabra que debe adivinar es...\n");
+
+	while(continuar==true){
+		fallos=0;
+		respuesta_juego=false;
+		numero = (rand() % NUMERO_ANIMALES);
+		strcpy(palabra_oculta,animales[numero]);
+		numero_caracteres=strlen(palabra_oculta);
+
+
+		if(primera_partida==false){
+			printf("¡Juguemos de nuevo! -> La palabra que debe adivinar es...  \n");
+		}
+
+		for(i=0;i<numero_caracteres;i++){
+			palabra_dinamica[i]='-';
+		}
+		palabra_dinamica[i]='\0';
+		printf("%s\n",palabra_dinamica);
+
+		while(caracter_correcto==false){
+			fin=true;
+			switch(fallos){
+						case 0:
+							for(i=0;i<7;i++){
+								printf("%s\n",ahorcado6[i]);
+							}
+							break;
+						case 1:
+							for(i=0;i<7;i++){
+								printf("%s\n",ahorcado5[i]);
+							}
+							break;
+						case 2:
+							for(i=0;i<7;i++){
+								printf("%s\n",ahorcado4[i]);
+							}
+							break;
+						case 3:
+							for(i=0;i<7;i++){
+								printf("%s\n",ahorcado3[i]);
+							}
+							break;
+						case 4:
+							for(i=0;i<7;i++){
+								printf("%s\n",ahorcado2[i]);
+							}
+							break;
+						case 5:
+							for(i=0;i<7;i++){
+								printf("%s\n",ahorcado1[i]);
+							}
+							break;
+						}
+			printf("Introduzca una unica letra en minusculas: \n");
+			gets(caracter_introducido);
+			if(strlen(caracter_introducido)==1){
+				for(i=0;i<strlen(caracter_adecuado) && fin_for_comprobar_caracteres==false;i++){
+					if(caracter_introducido[0]==caracter_adecuado[i]){
+						caracter_correcto=true;
+						fin_for_comprobar_caracteres=true;
+						printf("El caracter introducido tiene sentido...\n");
+					}
+				}
+			}
+			else{
+				printf("El texto introducido no tiene sentido porque hay mas de un caracter!\n");
+				caracter_correcto=false;
+			}
+
+			if(caracter_correcto==true){
+				caracter_correcto=false;
+				fin_for_comprobar_caracteres=false;
+				for(i=0;i<numero_caracteres;i++){
+					if(caracter_introducido[0]==palabra_oculta[i]){
+						acierto=true;
+						palabra_dinamica[i]=palabra_oculta[i];
+					}
+				}
+				if(acierto==true){
+					printf("Ha acertado!\n");
+					printf("La palabra que debe adivinar es:%s  \n",palabra_dinamica);
+					acierto=false;
+				}
+				else{
+					printf("No has acertado...\n");
+					fallos++;
+
+					if (fallos<6){
+						printf("Sigue jugando pero el numero de fallos es ahora: %d\n",fallos);
+						printf("La palabra que debe adivinar es:%s  \n",palabra_dinamica);
+					}
+					if(fallos==6){
+						for(i=0;i<7;i++){
+								printf("%s\n",ahorcado0[i]);
+							}
+						printf("Ya no hay mas intentos, lo sentimos...\n");
+
+					}
+				}
+			}
+
+			else if(caracter_correcto==false && strlen(caracter_introducido)==1){
+				printf("El texto introducido no tiene sentido porque no es una letra minuscula!\n");
+			}
+
+
+			if(fallos<6){
+				for(i=0;i<numero_caracteres;i++){
+					if(palabra_dinamica[i]=='-'){
+						fin=false;
+					}
+				}
+			}
+
+
+			if(fin==true){
+				caracter_correcto=true;
+			}
+		}
+
+		if(fallos<3) printf("Has ganado campeon!\n");
+
+		while(respuesta_juego==false){
+			printf("Te gustaria jugar de nuevo? Responde: SI o NO - > ");
+			gets(respuesta);
+			if(!strcmp(respuesta,"NO")){
+				printf("FIN DEL JUEGO, ESPERAMOS VOLVER A VERTE");
+				continuar=false;
+				respuesta_juego=true;
+			}
+			else if(!strcmp(respuesta,"SI")){
+				printf("La nueva palabra que debe adivinar es...\n");
+				respuesta_juego=true;
+				strcpy(palabra_dinamica,"\0");
+				strcpy(palabra_oculta,"\0");
+				printf("Palabra dinamica es: %s\n",palabra_dinamica);
+				fin=true;
+				caracter_correcto=false;
+			}
+			else{
+				printf("Te pasaste de gracioso con tu respuesta...\n");
+			}
+		}
+	}
+}
+   }
+   break;
+
+   case 21:
+   {
+    system("cls");
+
+   }
+   break;
+
+   default:
+ {
+ cout<<"no existe ea opcion imtente otra vez"<<endl;
+ }
+ break;
+   }//fin switch
+	getch();
+   system("pause");
+}
+}
+   }//fin
+

@@ -1,0 +1,124 @@
+#include<stdio.h>
+#include<conio.h>
+#include<iostream.h>
+#include<windows.h>
+main()
+{
+ int dia;
+ cout<<"ingrese el dia de la semana"<<endl;
+ cin>>dia;
+ switch(dia)
+ {//inicio del switch
+ case 1:
+ {
+ cout<<"dia domingo"<<endl;
+ }
+ break;
+
+  case 2:
+ {
+ cout<<"dia lunes"<<endl;
+ }
+ break;
+
+  case 3:
+ {
+ cout<<"dia martes"<<endl;
+ }
+ break;
+
+  case 4:
+ {
+ cout<<"dia miercoles"<<endl;
+ }
+ break;
+
+  case 5:
+ {
+ cout<<"dia jueves"<<endl;
+ }
+ break;
+
+  case 6:
+ {
+ cout<<"dia viernes"<<endl;
+ }
+ break;
+
+  case 7:
+ {
+ cout<<"dia sabado"<<endl;
+ }
+ break;
+
+ default:
+ {
+ cout<<"no existe";
+ }
+ break;
+ }
+  getch();
+}
+cout<<"Ingrese el nombre del segundo trabajador"<<endl;
+cin>>obrero;
+cout<<"Ingrese las horas trabajadas"<<endl;
+cin>>ht;
+th=ht*10.00;
+iggs=th-6.15;
+cout<<"su sueldo liquido es:"<<iggs<<endl;
+cout<<"Ingrese el nombre del tercer trabajador"<<endl;
+cin>>obrero;
+cout<<"Ingrese las horas trabajadas"<<endl;
+cin>>ht;
+th=ht*10.00;
+iggs=th-4.10;
+cout<<"su sueldo liquido es:"<<iggs<<endl;
+cout<<"Ingrese el nombre del cuarto trabajador"<<endl;
+cin>>obrero;
+cout<<"Ingrese las horas trabajadas"<<endl;
+cin>>ht;
+th=ht*10.00;
+iggs=th-4.10;
+cout<<"su sueldo liquido es:"<<iggs<<endl;
+cout<<"Ingrese el nombre del quinto trabajador"<<endl;
+cin>>obrero;
+cout<<"Ingrese las horas trabajadas"<<endl;
+cin>>ht;
+th=ht*10.00;
+iggs=th-4.10;
+cout<<"su sueldo liquido es:"<<iggs<<endl;
+cout<<"Ingrese el nombre del sexto trabajador"<<endl;
+cin>>obrero;
+cout<<"Ingrese las horas trabajadas"<<endl;
+cin>>ht;
+th=ht*10.00;
+iggs=th-4.10;
+cout<<"su sueldo liquido es:"<<iggs<<endl;
+cout<<"Ingrese el nombre del septimo trabajador"<<endl;
+cin>>obrero;
+cout<<"Ingrese las horas trabajadas"<<endl;
+cin>>ht;
+th=ht*10.00;
+iggs=th-4.10;
+cout<<"su sueldo liquido es:"<<iggs<<endl;
+cout<<"Ingrese el nombre del octavo trabajador"<<endl;
+cin>>obrero;
+cout<<"Ingrese las horas trabajadas"<<endl;
+cin>>ht;
+th=ht*10.00;
+iggs=th-4.10;
+cout<<"su sueldo liquido es:"<<iggs<<endl;
+cout<<"Ingrese el nombre del noveno trabajador"<<endl;
+cin>>obrero;
+cout<<"Ingrese las horas trabajadas"<<endl;
+cin>>ht;
+th=ht*10.00;
+iggs=th-4.10;
+cout<<"su sueldo liquido es:"<<iggs<<endl;
+cout<<"Ingrese el nombre del decimo trabajador"<<endl;
+cin>>obrero;
+cout<<"Ingrese las horas trabajadas"<<endl;
+cin>>ht;
+th=ht*10.00;
+iggs=th-4.10;
+cout<<"su sueldo liquido es:"<<iggs<<endl;

@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <conio.h>
+#include <windows.h>
+#include <iostream.h>
+#include <math.h>
+main()
+{
+char matriz[4], m2[4], m3[4];
+int multi;
+cout<<"|2 4 0|"<<matriz<<endl; cout<<"|5 7 0|"<<matriz<<endl; cout<<"|2 9 0|"<<matriz<<endl; cin>>matriz;
+cout<<"a)4|7 0|"<<m2<<endl; cout<<"   |9 0|"<<m2<<endl; cin>>m2;
+cout<<"b)-2|5 0|"<<m2<<endl; cout<<"   |2 0|"<<m2<<endl; cin>>m2;
+cout<<"c)0|2 9|"<<m2<<endl; cout<<"  |2 9|"<<m2<<endl; cin>>m2;
+cout<<"2|7 0|"<<m3<<endl; cout<<" |9 0|"<<m3<<endl;
+system("pause");
+}

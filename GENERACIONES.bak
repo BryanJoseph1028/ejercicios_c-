@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<conio.h>
+#include<iostream.h>
+#include<windows.h>
+main()
+{
+  int a;
+  cout<<"Ingrese el año nacimiento de la persona"<<endl;
+  cin>>a;
+  if(a>2000 && a<2001);
+  {
+   cout<<"usted es generacion milenia"<<endl;
+  }
+    getch();
+  }
+

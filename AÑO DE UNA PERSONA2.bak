@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<conio.h>
+#include<iostream.h>
+#include<windows.h>
+main()
+{
+  int Aactual, Anacimiento, resultado;
+  cout<<"ingrese el año acual"<<endl;
+  cin>>Aactual;
+  cout<<"Ingrese el año nacimiento de la persona"<<endl;
+  cin>>Anacimiento;
+  resultado=Aactual-Anacimiento;
+  cout<<"su año es"<<resultado;
+  system("pause");
+}
+getch();

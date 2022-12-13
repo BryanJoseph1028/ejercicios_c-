@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <conio.h>
+#include <iostream.h>
+#include <windows.h>
+#include <math.h>                             
+int elevaalcuadrado(int y)
+{
+int r;
+r=y*y;
+return r;
+}
+
+main()
+{
+int x;
+cin>>x;
+cout<<elevaalcuadrado(x);
+getch();
+}
+
